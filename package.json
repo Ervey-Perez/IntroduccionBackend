@@ -1,6 +1,6 @@
 {
   "name": "practica-2-introduccionbackend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creación del primer microservicio utilizando NodeJS.",
   "main": "index.js",
   "scripts": {
