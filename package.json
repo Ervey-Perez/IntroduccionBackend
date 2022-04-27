@@ -1,0 +1,22 @@
+{
+  "name": "practica-2-introduccionbackend",
+  "version": "1.0.0",
+  "description": "Creación del primer microservicio utilizando NodeJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ervey-Perez/IntroduccionBackend.git"
+  },
+  "keywords": [
+    "HTTP"
+  ],
+  "author": "Ervey Israel Perez Ayala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ervey-Perez/IntroduccionBackend/issues"
+  },
+  "homepage": "https://github.com/Ervey-Perez/IntroduccionBackend#readme"
+}
