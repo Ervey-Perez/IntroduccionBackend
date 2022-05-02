@@ -7,7 +7,7 @@ http.createServer(function(request, response){
 
     var filePath = '.' + request.url;
     if(filePath = './'){
-        filePath = './index.html';
+        filePath = './404.html';
     }
 
     var extname = String(path.extname(filePath)).toLowerCase();
@@ -19,6 +19,8 @@ http.createServer(function(request, response){
         '.png': 'image.png'
     };
 
+    contentType = mimeTypes[extname] || 'application/octet-stream';
+
     fs.readFile(filePath, function(error,content){
         if(error) {
             if(error.code == 'ENOENT'){
@@ -29,7 +31,8 @@ http.createServer(function(request, response){
             }
             else{
                 response.writeHead(500);
-                response.end('Sorry, check with the site admin for error: '+ error.response.end());
+                response.end('Sorry, check with the site admin for error: '+ error.code+'..\n');
+                error.response.end();
             }
         }
         else{
@@ -39,4 +42,4 @@ http.createServer(function(request, response){
         
     });
 }).listen(3000);
-console.log('Server running at http://127.0.0.1:3000/');
+console.log('Server running at http://192.168.50.148:3000/');
