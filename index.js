@@ -1,9 +1,9 @@
 //Llamamos el modulo http
 const http= require('http');
 //Establecemos la url o IP de nuestro servidor.
-const hostname = '192.168.50.195';
+const hostname = 'localhost';
 //Establecemos el puerto de escucha
-const port = 3000;
+const port = 18000;
 //Creamos una instancia HTTP con un request y un response
 const server = http.createServer((req,res)=> {
     //El servidor respondera un codigo 200

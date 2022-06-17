@@ -6,8 +6,8 @@ http.createServer(function(request, response){
     console.log('request', request.url);
 
     var filePath = '.' + request.url;
-    if(filePath = './'){
-        filePath = './404.html';
+    if(filePath == './'){
+        filePath = './index.html';
     }
 
     var extname = String(path.extname(filePath)).toLowerCase();
@@ -16,7 +16,7 @@ http.createServer(function(request, response){
         '.html': 'text/html',
         '.js': 'text/javascript',
         '.css': 'text/css',
-        '.png': 'image.png'
+        '.png': 'image/png'
     };
 
     contentType = mimeTypes[extname] || 'application/octet-stream';
@@ -41,5 +41,5 @@ http.createServer(function(request, response){
         }
         
     });
-}).listen(3000);
-console.log('Server running at http://192.168.50.148:3000/');
+}).listen(18000);
+console.log('Server running at http://l18540327.itdelicias.edu.mx:18000');
